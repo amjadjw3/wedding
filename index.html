@@ -290,8 +290,8 @@
     setInterval(update, 1000);
   }
 
-  createCountdown(new Date("2025-07-05T21:00:00"), "hennaCountdown");
-  createCountdown(new Date("2025-07-10T20:00:00"), "weddingCountdown");
+  createCountdown(moment.tz("2025-07-05 21:00", "Asia/Amman").toDate(), "hennaCountdown");
+createCountdown(moment.tz("2025-07-10 20:00", "Asia/Amman").toDate(), "weddingCountdown");
 </script>
 	</body>
 </html>
