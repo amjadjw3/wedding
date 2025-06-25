@@ -4,7 +4,7 @@ $(document).ready(function() {
   // Grab the current date
   let currentDate = new Date();
 
-  let targetDate = moment.tz("2025-07-10 20:00", "Asia/Amman");
+  let targetDate = moment.tz("2025-07-10 19:00", "Asia/Amman");
 
   // Calculate the difference in seconds between the future and current date
   let diff = targetDate / 1000 - currentDate.getTime() / 1000;

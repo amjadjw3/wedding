@@ -66,6 +66,45 @@ body {
 }
 
 
+@media (max-width: 576px) {
+  .col-sm-6 {
+    width: 100% !important;
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+}
+.event-wrap {
+  padding: 10px;
+  margin: 0 auto;
+  text-align: center;
+}
+@media (max-width: 480px) {
+  #hennaCountdown {
+    font-size: 14px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #hennaCountdown > div {
+    padding: 4px 8px;
+    margin: 4px 0;
+  }
+}
+iframe {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
 
 
 #page {
