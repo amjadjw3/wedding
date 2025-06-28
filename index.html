@@ -253,13 +253,16 @@
 
 
 <div class="container animate-box">
-  <div class="fh5co-video" style="background-color: #000; padding: 20px;">
-    <video controls width="100%" style="border-radius: 8px;">
+  <div class="custom-video-wrapper"style="background-image: url('images/og.jpg');">
+
+    <div class="play-button" onclick="playVideo()">▶</div>
+    <video id="myVideo" controls>
       <source src="videos/1.mp4" type="video/mp4">
-      المتصفح لا يدعم تشغيل هذا الفيديو.
+      المتصفح لا يدعم تشغيل الفيديو.
     </video>
   </div>
 </div>
+
 			</div>
 			
 		</div>
@@ -328,5 +331,14 @@
   createCountdown(moment.tz("2025-07-05 20:00", "Asia/Amman").toDate(), "hennaCountdown");
 createCountdown(moment.tz("2025-07-10 19:00", "Asia/Amman").toDate(), "weddingCountdown");
 </script>
+<script>
+  function playVideo() {
+    const video = document.getElementById("myVideo");
+    video.style.display = "block";
+    video.play();
+    document.querySelector(".play-button").style.display = "none";
+  }
+</script>
+</body>
 	</body>
 </html>
