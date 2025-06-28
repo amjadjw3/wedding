@@ -21,20 +21,33 @@ body {
 }
 .overlay {
   display: none;
-}
-.fh5co-video video {
-  position: relative;
-  z-index: 2;
-}
-.overlay {
   z-index: 1;
 }
+
+.fh5co-video {
+  position: relative;
+  padding-top: 56.25%; /* نسبة 16:9 */
+  background-size: cover;
+  background-position: center;
+}
+
+.fh5co-video video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: none;
+  z-index: 2;
+}
+
 .custom-video-wrapper {
   position: relative;
   background-image: url('images/preview.jpg');
   background-size: cover;
   background-position: center;
-  padding-top: 56.25%; /* نسبة 16:9 */
+  padding-top: 56.25%;
   overflow: hidden;
   border-radius: 10px;
 }
@@ -47,6 +60,7 @@ body {
   height: 100%;
   display: none;
   border-radius: 10px;
+  object-fit: cover;
 }
 
 .play-button {
@@ -62,24 +76,6 @@ body {
   cursor: pointer;
   z-index: 2;
 }
-.fh5co-video {
-  position: relative;
-}
-.fh5co-video video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* يجعل الفيديو يملىء الخلفية بدون تمدد غريب */
-  display: none;
-}
-.fh5co-video {
-  padding-top: 56.25%; /* يعطي نسبة 16:9 */
-  background-size: cover;
-  background-position: center;
-}
-
 #weddingCountdown {
   display: flex;
   gap: 10px;
