@@ -76,6 +76,14 @@ body {
   cursor: pointer;
   z-index: 2;
 }
+@media (max-width: 768px) {
+  .custom-video-wrapper {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #000; /* للخلفية السوداء حول الصورة إن لم تكن ممتلئة */
+  }
+}
 #weddingCountdown {
   display: flex;
   gap: 10px;
