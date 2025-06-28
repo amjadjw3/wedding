@@ -19,6 +19,7 @@ body {
   color: #828282;
   background: #fff;
 }
+
 .overlay {
   display: none;
   z-index: 1;
@@ -986,6 +987,7 @@ form label {
   margin: 0;
   padding: 0;
   color: white;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
 }
 #fh5co-header .display-tc h1,
 #fh5co-counter .display-tc h1,
@@ -1171,6 +1173,7 @@ form label {
   font-family: "Amsterdam", Arial, serif;
   color: #646464;
   font-size: 30px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
 }
 .couple-half .groom, .couple-half .bride {
   float: left;
@@ -1428,6 +1431,7 @@ form label {
   font-size: 18px;
   color: #5d5d5d;
   margin-bottom: 10px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
 }
 
 #fh5co-started {
